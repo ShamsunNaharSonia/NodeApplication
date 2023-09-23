@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <!-- font awesome icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="styles/style.css">
+
+
+</head>
+
+<body>
+    <div class="maincontainer">
+        <nav>
+            <div class="img-logo">
+              <i class="<i class="fa-sharp fa-solid fa-tree-palm" aria-hidden="true"></i>
+            </div>
+            <div></div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="addProducts.html">Home</a></li>
+                    <li><a href="Plants.html">Plants</a></li>
+                    <li><a href="chattWithUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container main">
+            <div class="two-col-row">
+                <div class="col50">
+                    <h3 class="yrcart">Products</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col50">
+                    <h3 class="addProduct">Add Product</h3>
+                    <form id="f">
+                        <div class="frow">
+                            <input type="text" placeholder="product name" id="name" required />
+                        </div>
+                        <div class="frow">
+                            <input type="number" placeholder="price.." id="price" required />
+                        </div>
+                        <div class="frow">
+                            <textarea placeholder="brief description" id="desc" required></textarea>
+                        </div>
+                        <div class="frow">
+                            <input type="file" id="pic" required />
+                        </div>
+                        <div class="frow">
+                            <button type="submit" class="btn">Add New</button></br>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="space"></div>
+        <footer class="footer">
+            <p>Copyright &copy; 2022 , All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/Plants.js"></script>
+</body>
+
+</html>
